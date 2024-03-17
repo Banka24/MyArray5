@@ -40,8 +40,8 @@ internal class Program
 
         foreach (var sportsmen in sportsmenSelector)
         {
-            Console.WriteLine($"Спортсмен {sportsmen.LastName} {sportsmen.FirstName}. Возраст: {DateTime.Today.Year - DateTime.Parse(sportsmen.BirthDate).Year}.\n" +
-                              $"Занимается спортом: {sportsmen.YearInSport}");
+            Console.WriteLine($"Спортсмен {sportsmen.LastName} {sportsmen.FirstName}.\n" +
+                              $"Возраст: {DateTime.Today.Year - DateTime.Parse(sportsmen.BirthDate).Year}.Занимается спортом: {sportsmen.YearInSport}");
         }
             
     }
